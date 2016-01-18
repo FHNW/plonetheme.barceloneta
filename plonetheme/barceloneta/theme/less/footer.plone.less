@@ -14,7 +14,7 @@
     color: @plone-gray-lighter;
   }
   a {
-    color: @plone-link-color-on-dark;
+    color: @plone-link-color;
     &:hover {color: lighten(@plone-link-color-on-dark,15%);}
   }
   .portletWrapper {
@@ -62,14 +62,16 @@
     }
   }
 }
-
+#portal-footer {
+  padding-top: 1em;
+  border-top: 1px solid #000;
+}
 #portal-siteactions {
   display: inline-block;
-  text-transform: uppercase;
   font-size: @plone-font-size-small;
 }
 #portal-siteactions li {
-  font-weight: bold;
+  font-weight: normal;
   display: inline-block;
   margin-left: 30px;
   &:first-child {

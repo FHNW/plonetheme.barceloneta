@@ -2200,7 +2200,7 @@ fieldset[disabled] .link-parent.active {
   padding: 0 !important;
 }
 .plone-breadcrumb ol a {
-  color: #086ca3;
+  color: #222;
 }
 .plone-breadcrumb ol > #breadcrumbs-current {
   color: #777777;
@@ -2546,7 +2546,7 @@ fieldset[disabled] .link-parent.active {
   color: #696969;
 }
 .portlet .portletHeader > a {
-  color: #086ca3;
+  color: #222;
 }
 .portlet.portletCalendar .portletHeader {
   text-align: center;
@@ -2836,7 +2836,7 @@ fieldset[disabled] .link-parent.active {
   color: #696969;
 }
 .managedPortlet .portletHeader > a {
-  color: #086ca3;
+  color: #222;
 }
 .managedPortlet.portletCalendar .portletHeader {
   text-align: center;
@@ -3999,10 +3999,10 @@ a.plone-toolbar-logo {
   color: #cccccc;
 }
 #portal-footer-wrapper a {
-  color: #16a1e3;
+  color: #000;
 }
 #portal-footer-wrapper a:hover {
-  color: #57beef;
+  color: #484848;
 }
 #portal-footer-wrapper .portletWrapper {
   display: inline-block;
@@ -4052,13 +4052,16 @@ a.plone-toolbar-logo {
   font-weight: 700;
   margin-right: 15px;
 }
+#portal-footer {
+  padding-top: 1em;
+  border-top: 1px solid #000;
+}
 #portal-siteactions {
   display: inline-block;
-  text-transform: uppercase;
   font-size: 12px;
 }
 #portal-siteactions li {
-  font-weight: bold;
+  font-weight: normal;
   display: inline-block;
   margin-left: 30px;
 }
@@ -4093,7 +4096,7 @@ body.template-logged_out #content-core .portletHeader {
 }
 body.template-login_form #content-core .portletHeader > a,
 body.template-logged_out #content-core .portletHeader > a {
-  color: #086ca3;
+  color: #222;
 }
 body.template-login_form #content-core.portletCalendar .portletHeader,
 body.template-logged_out #content-core.portletCalendar .portletHeader {
