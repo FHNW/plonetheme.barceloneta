@@ -4,7 +4,7 @@
 	border: @plone-portlet-border;
 	margin-bottom: 20px;
 	border-radius: @plone-border-radius-base;
-	box-shadow:  0 1px 3px rgba(0,0,0,.05);
+	// box-shadow:  0 1px 3px rgba(0,0,0,.05);
 	> :first-child {border-radius: @plone-border-radius-base @plone-border-radius-base 0 0;}
 	> :last-child {border-radius: 0 0 @plone-border-radius-base @plone-border-radius-base;}
 	.portletHeader {
@@ -53,15 +53,22 @@
 			> li {
 				a {
 				display: block;
-				padding: 10px 15px 26px 30px;
+				padding: 5px 15px 5px 30px;
 				position: relative;
 				z-index: 1;
-				color: @plone-link-color-on-grey;
+				list-style: none;
+				color: @plone-link-color;
 				}
-				> a {border-top: @plone-portlet-border;}
+				> a {
+					border-top: @plone-portlet-border;
+				}
 				&:first-child > a {border-top: 0;}
 				& a:before {
-					content:"•"; position: absolute; font-size: @plone-font-size-h3+1; margin-top: -9px; left: 15px;
+					// content:"•";
+					position: absolute;
+					font-size: @plone-font-size-h3+1;
+					margin-top: -9px;
+					left: 15px;
 					color: lighten(@plone-portlet-list-bullet, 15%);
 				}
 			}
@@ -79,8 +86,11 @@
 				font-size: @plone-font-size-small;
 				color: @plone-portlet-list-small-text;
 			}
-			li:hover {background: @plone-portlet-list-hover-bg;
-				a:before {color: @plone-portlet-list-bullet;}
+			li:hover {
+				background: @plone-portlet-list-hover-bg;
+				a:before {
+					color: @plone-portlet-list-bullet;
+				}
 			}
 		}
 		table {width: 100%; text-align: center; vertical-align: middle; border-collapse: collapse; border-spacing: 0;
@@ -130,20 +140,55 @@
 
 
 //*// Navigation
-.portletNavigationTree nav.portletContent > ul > li a { padding: 10px 15px 10px 15px; border-top: @plone-portlet-border;}
-.portletNavigationTree nav.portletContent > ul > li strong { padding: 10px 15px 10px 15px; border-top: @plone-portlet-border; background: @plone-portlet-footer-bg; color: @plone-gray; display: block; font-weight: @plone-font-weight-regular;}
+.portletNavigationTree nav.portletContent > ul > li a {
+	padding: 5px 15px 5px 15px;
+	border-top: @plone-portlet-border;
+}
+.portletNavigationTree nav.portletContent > ul > li strong {
+	padding: 10px 15px 10px 15px;
+	border-top: @plone-portlet-border;
+	background: @plone-portlet-footer-bg;
+	color: @plone-gray;
+	display: block;
+	font-weight: @plone-font-weight-regular;
+}
 .portletNavigationTree {
 	.portletContent {
 		border-top: 0;
-		> ul > li > a {display: block; background: darken(@plone-portlet-header-bg,2%);
-			&:before {content: ""; }
-			&:hover {background: @plone-portlet-footer-bg;}
-			&:hover:after {content:"⟩"; position: absolute; right: 10px; font-size: @plone-font-size-large; margin-top:-3px; color: @plone-gray-light;}
+		> ul > li > a {
+			display: block;
+			background: #fff; //darken(@plone-portlet-header-bg,2%);
+			&:before {
+				content: "";
+			}
+			&:hover {
+				background: @plone-portlet-footer-bg;
+			}
+			&:hover:after {
+				position: absolute;
+				right: 10px;
+				font-size: @plone-font-size-large;
+				margin-top:-3px;
+				color: @plone-gray-light;
+			}
 		}
-		> ul > li > ul a {padding-left:40px;}
-		> ul ul {padding-left: 0;}
-		.navTreeCurrentNode > a {background: @plone-portlet-footer-bg; color: @plone-gray;
-			&:after {content:"⟩"; position: absolute; right: 10px; font-size: @plone-font-size-large; margin-top:-3px; color: @plone-gray-light;}
+		> ul > li > ul a {
+			padding-left:40px;
+		}
+		> ul ul {
+			padding-left: 0;
+		}
+		.navTreeCurrentNode > a {
+			background: @plone-portlet-footer-bg;
+			color: @plone-gray;
+			&:after {
+				//content:"⟩";
+				position: absolute;
+				right: 10px;
+				font-size: @plone-font-size-large;
+				margin-top:-3px;
+				color: @plone-gray-light;
+			}
 		}
 	}
 }

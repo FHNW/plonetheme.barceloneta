@@ -5,13 +5,18 @@
   margin-bottom: 0; // For input.btn
   font-weight: @plone-font-weight-bold;
   text-align: center;
-  text-shadow: 0 1px rgba(0,0,0,.25);
+  // text-shadow: 0 1px rgba(0,0,0,.25);
   vertical-align: middle;
   cursor: pointer;
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid transparent;
   white-space: nowrap;
-  .button-size(@plone-padding-base-vertical; @plone-padding-base-horizontal; @plone-font-size-base; @plone-line-height-base; @plone-border-radius-small);
+  .button-size(
+    @plone-padding-base-vertical;
+    @plone-padding-base-horizontal;
+    @plone-font-size-base;
+    @plone-line-height-base;
+    @plone-border-radius-small);
   .user-select(none);
 
   &,
@@ -46,8 +51,12 @@
   }
 }
 
-.standalone, [type="submit"], button { //gray
-  .button-variant(@plone-btn-standalone-color; @plone-btn-standalone-bg; @plone-btn-standalone-border);
+.standalone, [type="submit"], button {
+  //gray
+  .button-variant(
+    @plone-btn-standalone-color;
+    @plone-btn-standalone-bg;
+    @plone-btn-standalone-border);
 }
 
 .context { //blue

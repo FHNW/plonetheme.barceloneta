@@ -100,7 +100,7 @@ output {
   background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
   border: 1px solid @plone-input-border;
   border-radius: @plone-input-border-radius;
-  .box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
+  //.box-shadow(inset 0 1px 1px rgba(0,0,0,.075));
   .transition(~"border-color ease-in-out .15s, box-shadow ease-in-out .15s");
 
   // Customize the `:focus` state to imitate native WebKit styles.
@@ -193,15 +193,15 @@ input[type="checkbox"] {
     font-weight: @plone-font-weight-regular;
     &:before {
       background-color: @plone-alert-error-bullet; content:"×";
-      font-size:@plone-font-size-base; 
-      font-weight: @plone-font-weight-regular; 
+      font-size:@plone-font-size-base;
+      font-weight: @plone-font-weight-regular;
       margin-left: -30px;
       margin-right: 5px;
-      display: inline-block; 
+      display: inline-block;
       border-radius: 20px;
       text-align:center;
-      color:rgba(255, 255, 255, 0.9); 
-      width:16px; 
+      color:rgba(255, 255, 255, 0.9);
+      width:16px;
       height:16px;
       line-height: 16px; //IE fix
       text-shadow: 0 -1px rgba(0,0,0,.5);
@@ -255,7 +255,7 @@ label .required {
 }
 
 //*// Input + Submit groups (manual because we still have no standard for this)
-.searchField.portlet-search-gadget, 
+.searchField.portlet-search-gadget,
 #sharing-user-group-search,
 #select-rules  {width: 100%; display: inline-block;}
 
