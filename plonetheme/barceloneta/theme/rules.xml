@@ -33,7 +33,7 @@
   <replace css:theme-children="#mainnavigation" css:content-children="#portal-mainnavigation" method="raw" />
   <drop css:content="#portal-header > #portal-searchbox" />
 
-  <!-- include view @@hero on homepage only 
+  <!-- include view @@hero on homepage only
   <after css:theme="#mainnavigation-wrapper" css:content=".principal" href="/@@hero" css:if-content="body.template-document_view.section-front-page" />-->
   <drop css:content=".principal" />
 
@@ -96,7 +96,7 @@
   <replace css:theme="#portal-top" css:content-children="#portal-top" />
 
   <!-- Footer -->
-  <replace css:theme-children="#portal-footer" css:content-children="#portal-footer-wrapper" />
+  <replace css:theme-children="#portal-footer > #footer" css:content-children="#portal-footer-wrapper" />
 
   <!-- toolbar -->
   <replace css:theme="#portal-toolbar" css:content-children="#edit-bar" css:if-not-content=".ajax_load" css:if-content=".userrole-authenticated" />
