@@ -2539,9 +2539,9 @@ fieldset[disabled] .link-parent.active {
 }
 .portlet .portletHeader {
   background: #fff;
-  font-weight: 500;
-  font-size: 18px;
-  padding: 13px 15px;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 0 15px;
   color: #696969;
 }
 .portlet .portletHeader > a {
@@ -2828,9 +2828,9 @@ fieldset[disabled] .link-parent.active {
 }
 .managedPortlet .portletHeader {
   background: #fff;
-  font-weight: 500;
-  font-size: 18px;
-  padding: 13px 15px;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 0 15px;
   color: #696969;
 }
 .managedPortlet .portletHeader > a {
@@ -4085,9 +4085,9 @@ body.template-logged_out #content-core > :last-child {
 body.template-login_form #content-core .portletHeader,
 body.template-logged_out #content-core .portletHeader {
   background: #fff;
-  font-weight: 500;
-  font-size: 18px;
-  padding: 13px 15px;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 0 15px;
   color: #696969;
 }
 body.template-login_form #content-core .portletHeader > a,
