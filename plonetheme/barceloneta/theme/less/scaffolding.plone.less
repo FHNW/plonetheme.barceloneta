@@ -124,7 +124,17 @@ hr {
   background: #ccc;
 }
 .plone-toolbar-left #edit-zone nav>ul > li {
-  color: #000;
+  color: #222;
+}
+.plone-toolbar-left #edit-zone nav>ul > li a:hover {
+  background: #ddd;
+}
+.plone-toolbar-submenu-header {
+  background: #222 !important;
+  padding-bottom: 5px !important;
+}
+.plone-toolbar-submenu-header span {
+  font-weight: 700 !important;
 }
 // Search List
 #searchform .documentFirstHeading {
@@ -134,6 +144,7 @@ hr {
 #content-header p {
   font-size: 16px;
   font-weight: 700;
+  color: @plone-gray-dark;
   position: relative;
   top: -30px;
   padding: 0;
